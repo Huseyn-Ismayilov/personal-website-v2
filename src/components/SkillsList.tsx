@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import skills from '../data/skills';
 
 const SkillList = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 1 }); // threshold'u 1 olarak değiştirdim
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 1 }); 
   return (
     <ul className='flex flex-wrap gap-x-2 gap-y-3 max-w-[800px]' ref={ref}>
       {skills.map((item, index) => (

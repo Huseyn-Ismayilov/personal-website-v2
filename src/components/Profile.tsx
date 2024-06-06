@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 export const Profile = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 })
+  const { inView } = useInView({ triggerOnce: true, threshold: 0.2 })
   return (
     <div className='overflow-hidden sm:rounded-xl shadow-md bg-white -mx-4 sm:mx-0'>
       <div className='relative'>
@@ -31,7 +31,7 @@ export const Profile = () => {
             </svg>
             Portfolio
           </Link>
-          <a className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'>
+          <a href='src/assets/Huseyn-Ismayilov.pdf' target='_blank' className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'>
             <svg
               width='16'
               viewBox='0 0 606 800'

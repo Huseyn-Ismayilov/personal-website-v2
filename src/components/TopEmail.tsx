@@ -1,4 +1,9 @@
-export default function TopEmail(props) {
+interface TopEmailProps {
+    to: string;
+    text: string;
+}
+
+const TopEmail: React.FC<TopEmailProps> = (props: TopEmailProps) => {
     return (
         <a
             href={props.to}
@@ -6,5 +11,7 @@ export default function TopEmail(props) {
         >
             {props.text}
         </a>
-    )
-}
+    );
+};
+
+export default TopEmail;

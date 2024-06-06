@@ -1,5 +1,3 @@
-// Modal.js
-import React from 'react';
 import { useModal } from '../context/ModalContext';
 import MailIcon from '../assets/mail-icon.png'
 import phoneIcon from '../assets/phone-icon.png'
@@ -7,7 +5,7 @@ import phoneIcon from '../assets/phone-icon.png'
 const Modal = () => {
     const { isOpen, closeModal } = useModal();
 
-    const handleCloseModal = (e) => {
+    const handleCloseModal = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         if (isOpen && e.target === e.currentTarget) {
             closeModal();
         }
@@ -15,7 +13,6 @@ const Modal = () => {
     if (!isOpen) return null;
 
     console.log(isOpen);
-    // console.log(closeModal);
 
     return (
         <div
@@ -56,7 +53,7 @@ const Modal = () => {
                             <input className='w-full h-14 rounded-xl bg-[#F7F7F7] p-4' type="text" placeholder='What’s your phone number?' />
                         </div>
                         <div className='mb-4'>
-                            <textarea className='w-full h-14 rounded-xl bg-[#F7F7F7] p-4 min-h-28 max-h-36' type="text" placeholder='Tell me more about the project...' />
+                            <textarea className='w-full h-14 rounded-xl bg-[#F7F7F7] p-4 min-h-28 max-h-36' placeholder='Tell me more about the project...' />
                         </div>
                         <button className='w-full py-3 bg-black/85 text-white rounded-lg hover:bg-black' type='submit'>Send Message</button>
                     </form>

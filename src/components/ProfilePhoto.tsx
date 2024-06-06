@@ -4,7 +4,7 @@ interface ProfileProps {
   src: string
   size?: string
   className?: string
-  active?: boolean // active prop'u artık isteğe bağlı olarak tanımlanıyor
+  active?: boolean 
 }
 
 const ProfilePhoto: React.FC<ProfileProps> = ({

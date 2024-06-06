@@ -128,9 +128,9 @@ export default function NavBar () {
   const { openModal } = useModal()
 
   return (
-    <div className='fixed bottom-10 left-1/2 -translate-x-1/2 shadow-md'>
+    <div className='fixed bottom-10 left-1/2 -translate-x-1/2'>
       <span className='hidden bg-purple-600 bg-green-600 bg-blue-700 bg-red-600'></span>
-      <nav className='flex items-center sm:gap-5 gap-3 p-4 border border-gray-300 rounded-xl backdrop-blur-sm bg-white/80'>
+      <nav className='flex items-center sm:gap-5 gap-3 p-4 border border-black/10 rounded-xl backdrop-blur-sm shadow-lg bg-white/80'>
         {LinkItems.map((item, index) => (
           <div className='relative group' key={index}>
             <span className='group-hover:opacity-100 group-hover:-translate-y-4 pointer-events-none absolute left-1/2 -translate-x-1/2 -translate-y-3 bottom-full leading-none px-2 py-1 rounded-md bg-black/80 text-white border border-black/10 opacity-0 transition-all md:block hidden'>

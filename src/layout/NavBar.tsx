@@ -65,7 +65,7 @@ const LinkItems: itemTypes[] = [
     )
   },
   {
-    text: 'Porfolio',
+    text: 'Portfolio',
     to: '/portfolio',
     color: 'green-600',
     icon: (

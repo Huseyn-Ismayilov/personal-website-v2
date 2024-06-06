@@ -1,8 +1,8 @@
 import Block from '../components/Block'
 import { useModal } from '../context/ModalContext'
-import Projects from '../components/Porfolio/Projects'
+import Projects from '../components/Portfolio/Projects'
 
-export default function Porfolio () {
+export default function Portfolio () {
   const { openModal } = useModal()
 
   return (

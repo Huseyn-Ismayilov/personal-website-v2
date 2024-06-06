@@ -7,14 +7,24 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 export const Profile = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 })
   return (
     <div className='overflow-hidden sm:rounded-xl shadow-md bg-white -mx-4 sm:mx-0'>
+      <img src={profileBg} className='w-full h-[120px] object-cover' alt='' />
       <div className='flex relative'>
-        <img src={profileBg} className='w-full h-[120px] object-cover' alt='' />
-        <div className='absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 z-10 px-8'>
-          <ProfilePhoto src={photo} active={true} />
-        </div>
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={inView ? { y: -50, opacity: 0 } : { y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 0 }}
+          className='w-full'
+        >
+          <div className='w-full'>
+            <div className='absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 z-10 px-8'>
+              <ProfilePhoto src={photo} active={true} />
+            </div>
+          </div>
+        </motion.div>
+
         <div className='absolute sm:right-8 right-3 sm:bottom-5 top-3 lg:top-auto  flex items-center gap-4'>
           <Link
             to='/portfolio'

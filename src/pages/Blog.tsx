@@ -11,14 +11,7 @@ export default function Blog () {
   }
 
   return (
-    // <motion.div
-    //   initial={{ opacity: 0, y: -50 }}
-    //   animate={{ opacity: 1, y: 0 }}
-    //   exit={{ opacity: 0, y: 50 }}
-    //   transition={{ ease: "circInOut", duration: .5 }}
-    //   className="container mx-auto pb-14"
-    // >
-    <div>
+    <section className='pb-8'>
       <div className='container mx-auto'>
         <h1 className='text-3xl font-bold mb-10'>All Blogs</h1>
         <BlogList blogs={blogs.slice(0, visibleBlogs)} grid={true} />
@@ -35,7 +28,6 @@ export default function Blog () {
           )}
         </div>
       </div>
-    </div>
-    // </motion.div>
+    </section>
   )
 }

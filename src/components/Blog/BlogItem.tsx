@@ -1,11 +1,23 @@
 // BlogItem
 import { Link } from 'react-router-dom'
 
-const BlogItem = ({ title, previewText, link, date }) => (
+interface blogitemProps {
+  title: string
+  previewText: string
+  link: string
+  date: string
+}
+
+const BlogItem: React.FC<blogitemProps> = ({
+  title,
+  previewText,
+  link,
+  date
+}) => (
   <Link to={link} className='group block'>
     <h2 className='text-lg font-semibold mb-2 hover:underline'>{title}</h2>
     <p className='line-clamp-2 mb-2 font-medium opacity-60'>{previewText}</p>
-    <div className='inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 group'>
+    <div className='inline-flex items-center gap-2 text-blue-600 hover:text-blue-700'>
       Read post
       <svg
         className='size-4 transition-all'

@@ -1,11 +1,13 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import profileBg from '../assets/profileBG3.jpeg'
 import photo from '../assets/photo.png'
 import ProfilePhoto from './ProfilePhoto'
 import SocialMedia from './SocialMedia/SocialMedia'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 export const Profile = () => {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   return (
     <div className='overflow-hidden sm:rounded-xl shadow-md bg-white -mx-4 sm:mx-0'>
       <div className='flex relative'>
@@ -32,9 +34,7 @@ export const Profile = () => {
             </svg>
             Portfolio
           </Link>
-          <a 
-            className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'
-          >
+          <a className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'>
             <svg
               width='16'
               viewBox='0 0 606 800'
@@ -63,13 +63,19 @@ export const Profile = () => {
         </div>
       </div>
       <div className='flex text-center items-center justify-center px-8 pt-12 pb-8'>
-        <div>
-          <h1 className='text-2xl font-bold mb-2'>👋 I’m Huseyn Ismayilov</h1>
-          <h3 className='text-gray-400 mb-3'>
-            I’m a Front-End developer based in Azerbaijan, Baku
-          </h3>
-          <SocialMedia variant='variant2' />
-        </div>
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={inView ? { y: -50, opacity: 0 } : { y: 0, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0 }}
+        >
+          <div>
+            <h1 className='text-2xl font-bold mb-2'>👋 I’m Huseyn Ismayilov</h1>
+            <h3 className='text-gray-400 mb-3'>
+              I’m a Front-End developer based in Azerbaijan, Baku
+            </h3>
+            <SocialMedia variant='variant2' />
+          </div>
+        </motion.div>
       </div>
     </div>
   )

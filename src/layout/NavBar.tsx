@@ -133,7 +133,7 @@ export default function NavBar () {
       <nav className='flex items-center gap-5 p-4 border border-gray-300 rounded-xl backdrop-blur-sm bg-white/70'>
         {LinkItems.map((item, index) => (
           <div className='relative group' key={index}>
-            <span className='group-hover:opacity-100 group-hover:-translate-y-4 absolute left-1/2 -translate-x-1/2 -translate-y-3 bottom-full leading-none px-2 py-1 rounded-md bg-black/80 text-white border border-black/10 opacity-0 transition-all md:block hidden'>
+            <span className='group-hover:opacity-100 group-hover:-translate-y-4 pointer-events-none absolute left-1/2 -translate-x-1/2 -translate-y-3 bottom-full leading-none px-2 py-1 rounded-md bg-black/80 text-white border border-black/10 opacity-0 transition-all md:block hidden'>
               {item.text}
             </span>
             <NavLink key={index} to={item.to} preventScrollReset={true}>
@@ -141,10 +141,10 @@ export default function NavBar () {
                 const color = isActive ? item.color : ''
                 return (
                   <div
-                    className={`flex items-center justify-center w-12 h-12 rounded-xl border border-black/10 transition-all ${
+                    className={`flex items-center justify-center w-12 h-12 rounded-xl border transition-all ${
                       isActive
-                        ? `border-gray-200 hover:border-gray-200 bg-${color} text-white `
-                        : `text-black/60 hover:bg-black/5`
+                        ? `hover:border-gray-200 bg-${color} border-${color} text-white `
+                        : `text-black/60 hover:bg-black/5 border-gray-200`
                     }`}
                   >
                     {item.icon}

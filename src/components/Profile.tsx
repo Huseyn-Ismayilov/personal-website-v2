@@ -31,7 +31,7 @@ export const Profile = () => {
             </svg>
             Portfolio
           </Link>
-          <a href='src/assets/Huseyn-Ismayilov.pdf' target='_blank' className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'>
+          <a href='../assets/Huseyn-Ismayilov.pdf' target='_blank' className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'>
             <svg
               width='16'
               viewBox='0 0 606 800'

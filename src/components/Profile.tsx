@@ -10,22 +10,9 @@ export const Profile = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 })
   return (
     <div className='overflow-hidden sm:rounded-xl shadow-md bg-white -mx-4 sm:mx-0'>
-      <img src={profileBg} className='w-full h-[120px] object-cover' alt='' />
-      <div className='flex relative'>
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={inView ? { y: -50, opacity: 0 } : { y: 0, opacity: 1 }}
-          transition={{ duration: 0.2, delay: 0 }}
-          className='w-full'
-        >
-          <div className='w-full'>
-            <div className='absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 z-10 px-8'>
-              <ProfilePhoto src={photo} active={true} />
-            </div>
-          </div>
-        </motion.div>
-
-        <div className='absolute sm:right-8 right-3 sm:bottom-5 top-3 lg:top-auto  flex items-center gap-4'>
+      <div className='relative'>
+        <img src={profileBg} className='w-full h-[120px] object-cover' alt='' />
+        <div className='absolute sm:right-6 right-2 sm:bottom-5 top-3 lg:top-auto flex items-center gap-4'>
           <Link
             to='/portfolio'
             className='items-center rounded-lg font-semibold bg-white bg-opacity-95 pr-4 h-10 hover:bg-opacity-100 hidden sm:flex'
@@ -71,6 +58,20 @@ export const Profile = () => {
             Download Cv
           </a>
         </div>
+      </div>
+      <div className='relative'>
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={inView ? { y: -50, opacity: 0 } : { y: 0, opacity: 1 }}
+          transition={{ duration: 0.2, delay: 0 }}
+          className='w-full'
+        >
+          <div className='w-full'>
+            <div className='absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 z-10 px-8'>
+              <ProfilePhoto src={photo} active={true} />
+            </div>
+          </div>
+        </motion.div>
       </div>
       <div className='flex text-center items-center justify-center px-8 pt-12 pb-8'>
         <motion.div

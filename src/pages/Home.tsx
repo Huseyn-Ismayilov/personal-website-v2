@@ -1,4 +1,3 @@
-import React from 'react'
 import { Profile } from '../components/Profile'
 import SkillList from '../components/SkillsList'
 import Block from '../components/Block'

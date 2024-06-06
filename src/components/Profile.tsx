@@ -58,21 +58,20 @@ export const Profile = () => {
             Download Cv
           </a>
         </div>
-      </div>
-      <div className='relative'>
         <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={inView ? { y: -50, opacity: 0 } : { y: 0, opacity: 1 }}
-          transition={{ duration: 0.2, delay: 0 }}
+          initial={{ y: -30, opacity: 0 }}
+          animate={inView ? { y: -30, opacity: 0 } : { y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0 }}
           className='w-full'
         >
           <div className='w-full'>
             <div className='absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 z-10 px-8'>
-              <ProfilePhoto src={photo} active={true} />
+              <ProfilePhoto src={photo} active={true}/>
             </div>
           </div>
         </motion.div>
       </div>
+     
       <div className='flex text-center items-center justify-center px-8 pt-12 sm:pb-8 pb-5'>
         <motion.div
           initial={{ y: -50, opacity: 0 }}

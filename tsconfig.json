@@ -4,7 +4,8 @@
     "target": "es5",
     "module": "commonjs",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": ["./typings", "./node_modules/@types"],
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/types", "types"],
 }

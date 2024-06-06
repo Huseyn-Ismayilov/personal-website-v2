@@ -2,7 +2,7 @@ import BlockTransition from './Animated'
 
 interface titleProps {
   title: string
-  fontsize: string
+  fontSize?: string
 }
 const BlockTitle: React.FC<titleProps> = (props) => {
   return (

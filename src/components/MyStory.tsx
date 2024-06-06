@@ -6,7 +6,7 @@ import BlockTitle from './BlockTitle'
 export default function MyStory () {
   return (
     <Block>
-      <ProfilePhoto src={photo} className='mb-3' />
+      <ProfilePhoto src={photo} className='mb-3' size='sm'/>
       <BlockTitle title='My story' fontSize='text-lg' />
       <p className='font-medium text-gray-400 leading-6'>
         👋 I am a 20-year-old accomplished front-end developer with a rich

@@ -12,7 +12,7 @@ const Projects = () => {
           key={index}
           initial={{ y: -50, opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }} 
-          transition={{ duration: 0.2, delay: index * 0.1 }}
+          transition={{ duration: 0.35, delay: index * 0.1 }}
         >
           <Card
             image={item.image}

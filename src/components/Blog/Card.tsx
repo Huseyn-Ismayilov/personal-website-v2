@@ -12,7 +12,6 @@ const BlogItem: React.FC<blogitemProps> = ({
   title,
   previewText,
   link,
-  date
 }) => (
   <Link to={link} className='group block'>
     <h2 className='text-lg font-semibold mb-2 hover:underline'>{title}</h2>

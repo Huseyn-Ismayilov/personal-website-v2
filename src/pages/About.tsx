@@ -36,7 +36,7 @@ export default function About() {
                     <SkillList />
                 </div>
             </section>
-            <section className="mb-8">
+            <section className="mb-4">
                 <div className="container mx-auto">
                     <div className="lg:flex lg:space-x-7">
                         <div className="lg:w-1/2">

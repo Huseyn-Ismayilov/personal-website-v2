@@ -17,7 +17,7 @@ export default function Home () {
           <Profile />
         </div>
       </section>
-      <section>
+      <section className='mb-14'>
         <div className='container mx-auto'>
           <BlockTitle title='About me' />
           <div className='md:flex md:space-x-7'>

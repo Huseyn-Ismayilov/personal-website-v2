@@ -12,7 +12,7 @@ export const Profile = () => {
     <div className='overflow-hidden sm:rounded-xl shadow-md bg-white -mx-4 sm:mx-0'>
       <div className='relative'>
         <img src={profileBg} className='w-full h-[120px] object-cover' alt='' />
-        <div className='absolute sm:right-6 right-2 sm:bottom-5 top-3 lg:top-auto flex items-center gap-4'>
+        <div className='absolute sm:right-6 right-2 sm:bottom-5 bottom-2 flex items-center gap-4'>
           <Link
             to='/portfolio'
             className='items-center rounded-lg font-semibold bg-white bg-opacity-95 pr-4 h-10 hover:bg-opacity-100 hidden sm:flex'
@@ -73,7 +73,7 @@ export const Profile = () => {
           </div>
         </motion.div>
       </div>
-      <div className='flex text-center items-center justify-center px-8 pt-12 pb-8'>
+      <div className='flex text-center items-center justify-center px-8 pt-12 sm:pb-8 pb-5'>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={inView ? { y: -50, opacity: 0 } : { y: 0, opacity: 1 }}

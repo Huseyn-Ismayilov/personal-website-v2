@@ -1,7 +1,6 @@
 import MyStory from "../components/MyStory"
 import BlockTitle from "../components/BlockTitle"
 import Certificates from "../components/Certificates"
-import Follow from "../components/Follow"
 import SkillList from "../components/SkillsList"
 import Experience from "../components/Experience"
 import Education from "../components/Education"
@@ -17,7 +16,6 @@ export default function About() {
                                 title="About me"
                             />
                             <MyStory />
-                            <Follow />
                         </div>
                         <div className="lg:w-6/12">
                             <BlockTitle

@@ -114,8 +114,28 @@ const LeftNavbar = () => {
   const { openModal } = useModal()
 
   return (
-    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col'>
+    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/5 flex flex-col bg-[#00000002]'>
+      {/* <div className="w-full max-w-64 ml-auto">
+     
+      </div> */}
+
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
+        <div className='flex items-center justify-between mb-6'>
+          <span className='flex items-center gap-1 text-sm font-medium text-black/65'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 20 20'
+              className='w-4 shrink-0 text-black/50'
+            >
+              <path
+                d='M 14.426 4.637 C 15.028 4.326 15.675 4.972 15.364 5.575 L 9.124 17.637 C 8.785 18.292 7.794 18.039 7.811 17.302 L 7.933 12.068 L 2.699 12.19 C 1.962 12.207 1.709 11.216 2.364 10.877 Z'
+                fill='currentColor'
+              ></path>
+            </svg>
+            Baku, Azerbaijan
+          </span>
+          <span className='text-sm font-medium text-black/65'>GMT +4</span>
+        </div>
         <div className='mb-6 text-center'>
           <motion.div
             className='inline-block relative size-20 group perspective-1000 rounded-full cursor-pointer'
@@ -163,7 +183,7 @@ const LeftNavbar = () => {
                       }`}
                     >
                       <div className='shrink-0 w-5 h-auto'>{item.icon}</div>
-                      {item.text}
+                      <span>{item.text}</span>
                     </div>
                   )
                 }}

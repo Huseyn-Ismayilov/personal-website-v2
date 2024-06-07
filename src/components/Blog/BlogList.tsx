@@ -1,6 +1,5 @@
 import React from 'react'
 import BlogItem from './Card'
-import parse from 'html-react-parser'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 

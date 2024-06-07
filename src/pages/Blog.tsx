@@ -13,20 +13,16 @@ export default function Blog () {
 
   return (
     <>
-      <section>
+      <section className='mb-10'>
         <div className='container mx-auto'>
-          <Block>
-            <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
-              <div>
-                <h1 className='text-3xl font-semibold mb-2'>
-                All Blogs
-                </h1>
-                <p className='max-w-72 text-gray-400'>
+          <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
+            <div>
+              <h1 className='text-3xl font-semibold mb-2'>All Blogs</h1>
+              <p className='max-w-72 text-gray-400'>
                 Ready for an innovative journey filled with insightful writings?
-                </p>
-              </div>
+              </p>
             </div>
-          </Block>
+          </div>
         </div>
       </section>
       <section className='pb-8'>

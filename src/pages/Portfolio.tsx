@@ -1,15 +1,14 @@
-import Block from '../components/Block'
 import { useModal } from '../context/ModalContext'
 import Projects from '../components/Portfolio/Projects'
+import { projects } from '../data/projects'
 
 export default function Portfolio () {
   const { openModal } = useModal()
 
   return (
     <>
-      <section>
+      <section className='mb-10'>
         <div className='container mx-auto'>
-          <Block>
             <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
               <div>
                 <h1 className='text-3xl font-semibold mb-2'>
@@ -41,12 +40,11 @@ export default function Portfolio () {
                 </button>
               </div>
             </div>
-          </Block>
         </div>
       </section>
       <section className='pb-10'>
         <div className='container mx-auto'>
-          <Projects />
+          <Projects  projects={projects} />
         </div>
       </section>
     </>

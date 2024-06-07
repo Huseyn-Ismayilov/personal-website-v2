@@ -6,7 +6,7 @@ export default function Follow () {
   return (
     <Block>
       <BlockTitle fontSize='text-lg' title='Follow my work on' />
-      <SocialMedia variant='variant2' />
+      <SocialMedia/>
     </Block>
   )
 }

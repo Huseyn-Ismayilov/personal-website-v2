@@ -12,14 +12,14 @@ export default function About() {
             <section className="mb-8">
                 <div className="container mx-auto">
                     <div className="lg:flex lg:space-x-7">
-                        <div className="lg:w-1/2">
+                        <div className="lg:w-6/12">
                             <BlockTitle
                                 title="About me"
                             />
                             <MyStory />
                             <Follow />
                         </div>
-                        <div className="lg:w-1/2">
+                        <div className="lg:w-6/12">
                             <BlockTitle
                                 title="Certificates"
                             />

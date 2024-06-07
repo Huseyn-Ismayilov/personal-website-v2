@@ -11,7 +11,7 @@ const SkillList = () => {
           key={index}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.3, delay: index * 0.1 }}
+          transition={{ duration: 0.2, delay: index * 0.05 }}
           className='px-3 py-2 border border-gray-300 rounded-lg text-gray-400 bg-white shadow-md'
         >
           {item}

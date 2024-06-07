@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import { useModal } from '../context/ModalContext'
 import { motion } from 'framer-motion'
-import ProfilePhoto from '../components/ProfilePhoto'
 import avatar from '../assets/avatar.jpeg'
 import photo from '../assets/photo.png'
+import SocialMedia from '../components/SocialMedia/SocialMedia'
 
 interface itemTypes {
   text: string
@@ -114,36 +114,34 @@ const LeftNavbar = () => {
   const { openModal } = useModal()
 
   return (
-    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/15 p-6'>
-      <div className='w-64 ml-auto'>
-        <div className='mb-5 text-center'>
-          <div className='inline-block relative size-20 group perspective-1000 rounded-full'>
-            <motion.div
-              className='absolute inset-0 w-full h-full'
-              whileHover='hover'
-            >
-              <motion.img
-                src={avatar}
-                alt=''
-                className='absolute inset-0 w-full h-full rounded-full shadow-lg transition-shadow duration-500 border border-black/10'
-                initial={{ opacity: 1, rotateY: 0, visibility: 'visible' }}
-                variants={{
-                  hover: { opacity: 0, rotateY: 180, visibility: 'hidden' }
-                }}
-                transition={{ duration: 0.8 }}
-              />
-              <motion.img
-                src={photo}
-                alt='Your '
-                className='absolute inset-0 w-full h-full rounded-full shadow-lg opacity-0 transition-opacity duration-500 border border-black/10 backface-hidden'
-                initial={{ opacity: 0, rotateY: -180, visibility: 'hidden' }}
-                variants={{
-                  hover: { opacity: 1, rotateY: 0, visibility: 'visible' }
-                }}
-                transition={{ duration: 0.8 }}
-              />
-            </motion.div>
-          </div>
+    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col'>
+      <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
+        <div className='mb-6 text-center'>
+          <motion.div
+            className='inline-block relative size-20 group perspective-1000 rounded-full cursor-pointer'
+            whileHover='hover'
+          >
+            <motion.img
+              src={avatar}
+              alt=''
+              className='absolute inset-0 w-full h-full rounded-full shadow-lg transition-shadow duration-500 border border-black/10'
+              initial={{ opacity: 1, rotateY: 0, visibility: 'visible' }}
+              variants={{
+                hover: { opacity: 0, rotateY: 180, visibility: 'hidden' }
+              }}
+              transition={{ duration: 0.8 }}
+            />
+            <motion.img
+              src={photo}
+              alt='Your '
+              className='absolute inset-0 w-full h-full rounded-full shadow-lg opacity-0 transition-opacity duration-500 border border-black/10 backface-hidden'
+              initial={{ opacity: 0, rotateY: -180, visibility: 'hidden' }}
+              variants={{
+                hover: { opacity: 1, rotateY: 0, visibility: 'visible' }
+              }}
+              transition={{ duration: 0.8 }}
+            />
+          </motion.div>
           <h1 className='text-2xl font-semibold text-black/85'>
             Huseyn Ismayilov
           </h1>
@@ -158,7 +156,7 @@ const LeftNavbar = () => {
                 {({ isActive }) => {
                   return (
                     <div
-                      className={`flex items-center gap-3 px-4 h-10 rounded-xl  border border-black/5 transition-all ${
+                      className={`flex items-center gap-3 px-4 h-10 rounded-xl text-md border border-black/5 transition-all ${
                         isActive
                           ? `hover:border-gray-200 bg-black/80 text-white`
                           : `text-black/60 hover:bg-black/5`
@@ -178,20 +176,25 @@ const LeftNavbar = () => {
               className='flex items-center gap-3 px-4 h-11 border border-black/5 text-black/60 hover:bg-black/5 w-full rounded-xl'
             >
               <svg
-                width='18'
-                height='15'
-                viewBox='0 0 18 15'
+                className='w-5'
+                viewBox='0 0 24 24'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
               >
                 <path
-                  d='M1.88911 0.333313C1.10155 0.333313 0.439439 0.852646 0.207883 1.57009C0.140883 1.77787 0.249661 1.99287 0.434217 2.10942L8.69733 7.32576C8.88233 7.44253 9.11811 7.44253 9.30311 7.32576L17.5662 2.10942C17.7508 1.99287 17.8596 1.77787 17.7926 1.57009C17.561 0.852646 16.8989 0.333313 16.1113 0.333313H1.88911ZM0.981551 4.25176C0.603773 4.0132 0.111328 4.28476 0.111328 4.73153V12.9046C0.111328 13.8969 0.906884 14.7005 1.88911 14.7005H16.1113C17.0936 14.7005 17.8891 13.8969 17.8891 12.9046V4.73153C17.8891 4.28476 17.3967 4.0132 17.0189 4.25176L9.47066 9.01642C9.18266 9.19787 8.81777 9.19787 8.52977 9.01642L0.981551 4.25176Z'
-                  fill='#D9D9D9'
+                  d='M2.82495 6.68957L11.5 11.5824L20.1751 6.68957C19.9817 6.12279 19.4353 5.71429 18.7917 5.71429H4.20833C3.56466 5.71429 3.01839 6.12279 2.82495 6.68957ZM20.25 8.62543L11.9366 13.3143C11.6664 13.4666 11.3337 13.4666 11.0634 13.3143L2.75 8.62543V16.8571C2.75 17.6462 3.40291 18.2857 4.20833 18.2857H18.7917C19.5971 18.2857 20.25 17.6462 20.25 16.8571V8.62543ZM1 7.14286C1 5.40711 2.43642 4 4.20833 4H18.7917C20.5636 4 22 5.40711 22 7.14286V16.8571C22 18.5929 20.5636 20 18.7917 20H4.20833C2.43642 20 1 18.5929 1 16.8571V7.14286Z'
+                  fill='currentColor'
                 />
               </svg>
               Contact
             </button>
           </div>
+        </div>
+      </div>
+      <div className='mt-auto'>
+        <div className='h-px w-full bg-black/5'></div>
+        <div className='w-full max-w-64 ml-auto pr-6 py-6 mb-4'>
+          <SocialMedia />
         </div>
       </div>
     </div>

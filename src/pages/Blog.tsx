@@ -27,12 +27,6 @@ export default function Blog () {
       </section>
       <section className='pb-8'>
         <div className='container mx-auto'>
-          {/* <div className='mb-10'>
-            <h1 className='text-3xl font-semibold mb-4'>All Blogs</h1>
-            <p className='text-gray-400 max-w-72'>
-              Ready for an innovative journey filled with insightful writings?
-            </p>
-          </div> */}
           <BlogList blogs={blogs.slice(0, visibleBlogs)} grid={true} />
           <div className='text-center mt-10'>
             {visibleBlogs < blogs.length && (

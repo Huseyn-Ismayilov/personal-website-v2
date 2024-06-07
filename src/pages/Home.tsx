@@ -16,10 +16,10 @@ export default function Home () {
             <div className='size-2 rounded-full bg-green-600'></div>
             <p>Available</p>
           </div>
-          <h1 className='text-5xl font-semibold text-black -mb-1'>
+          <h1 className='text-5xl font-semibold text-black tracking-tight -mb-1'>
             Hello I’m Huseyn👏
           </h1>
-          <h1 className='text-5xl font-semibold text-black/50 mb-7'>
+          <h1 className='text-5xl font-semibold text-black/45 tracking-tight mb-7'>
             Real Things. Experienced Developer.
           </h1>
           <p className='text-base text-black/60 tracking-tight leading-7 mb-8'>

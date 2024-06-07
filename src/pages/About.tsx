@@ -1,4 +1,3 @@
-import MyStory from '../components/MyStory'
 import BlockTitle from '../components/BlockTitle'
 import Certificates from '../components/Certificates'
 import SkillList from '../components/SkillsList'
@@ -13,8 +12,11 @@ export default function About () {
         <div className='container mx-auto'>
           <h1 className='text-2xl font-semibold tracking-tight leading-8'>
             <span className='text-black/40'>Hi there </span>👋 <br /> I'm a
-            frontend developer, currently freelancing at Bionluk. I have a
-            fervent passion for meticulously crafting beautiful
+            frontend developer, currently freelancing at{' '}
+            <a className='inline-block transition-all underline hover:text-blue-700' href='https://bionluk.com/cyweb' target='_blank'>
+              Bionluk
+            </a>
+            . I have a fervent passion for meticulously crafting beautiful
             micro-interactions and refining the smallest details in interface
             design.
           </h1>

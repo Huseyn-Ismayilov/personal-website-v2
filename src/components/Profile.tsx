@@ -83,7 +83,7 @@ export const Profile = () => {
           transition={{ duration: 0.4, delay: 0 }}
         >
           <div>
-            <h1 className='text-2xl font-bold mb-2'>👋 I’m Huseyn Ismayilov</h1>
+            <h1 className='text-2xl font-bold mb-2'>👏 I’m Huseyn Ismayilov</h1>
             <h3 className='text-gray-400 mb-3'>
               I’m a Front-End developer based in Azerbaijan, Baku
             </h3>

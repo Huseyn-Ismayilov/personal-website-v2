@@ -124,7 +124,7 @@ const LinkItems: itemTypes[] = [
   }
 ]
 
-export default function NavBar () {
+const LeftNavbar = () =>{
   const { openModal } = useModal()
 
   return (
@@ -185,3 +185,5 @@ export default function NavBar () {
     </div>
   )
 }
+
+export default LeftNavbar

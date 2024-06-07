@@ -12,13 +12,9 @@ const SkillList = () => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.3, delay: index * 0.1 }}
+          className='px-3 py-2 border border-gray-300 rounded-lg text-gray-400 bg-white shadow-md'
         >
-          <li
-            key={index}
-            className='px-3 py-2 border border-gray-300 rounded-lg text-gray-400 bg-white shadow-md'
-          >
-            {item}
-          </li>
+          {item}
         </motion.li>
       ))}
     </ul>

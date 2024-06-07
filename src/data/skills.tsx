@@ -1,9 +1,12 @@
 const skills: string[] = [
+  "Html",
+  'Css',
+  'Sass/Scss',
   'Javascript',
   'React',
   'Redux',
   'Jquery',
-  'Sass/Scss',
+  'Git',
   'Tailwind',
   'Bootstrap',
   'Strapi',

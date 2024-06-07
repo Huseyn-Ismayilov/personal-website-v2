@@ -31,7 +31,11 @@ export const Profile = () => {
             </svg>
             Portfolio
           </Link>
-          <a href='../assets/Huseyn-Ismayilov.pdf' target='_blank' className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'>
+          <a
+            href='/public/Huseyn-Ismayilov.pdf'
+            target='_blank'
+            className='flex items-center gap-2 rounded-lg font-semibold bg-white bg-opacity-95 px-3 h-10 hover:bg-opacity-100'
+          >
             <svg
               width='16'
               viewBox='0 0 606 800'
@@ -55,7 +59,7 @@ export const Profile = () => {
                 fill='currentColor'
               />
             </svg>
-            Download Cv
+            Resume
           </a>
         </div>
         <motion.div
@@ -66,12 +70,12 @@ export const Profile = () => {
         >
           <div className='w-full'>
             <div className='absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 z-10 px-8'>
-              <ProfilePhoto src={photo} active={true}/>
+              <ProfilePhoto src={photo} active={true} />
             </div>
           </div>
         </motion.div>
       </div>
-     
+
       <div className='flex text-center items-center justify-center px-8 pt-12 sm:pb-8 pb-5'>
         <motion.div
           initial={{ y: -50, opacity: 0 }}

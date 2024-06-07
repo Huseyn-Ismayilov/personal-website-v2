@@ -20,25 +20,6 @@ export default function About () {
           </h1>
         </div>
       </section>
-      {/* <section className="mb-8">
-                <div className="container mx-auto">
-                    <div className="lg:flex lg:space-x-7">
-                        <div className="lg:w-1/2">
-                            <BlockTitle
-                                title="About me"
-                            />
-                            <MyStory />
-                            <Follow />
-                        </div>
-                        <div className="lg:w-1/2">
-                            <BlockTitle
-                                title="Certificates"
-                            />
-                            <Certificates />
-                        </div>
-                    </div>
-                </div>
-            </section> */}
       <section className='mb-12'>
         <div className='container mx-auto'>
           <BlockTitle title='Skills' />

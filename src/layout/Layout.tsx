@@ -1,9 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
-// Layout
-import TopHeader from './TopHeader'
-// import NavBar from './NavBar'
-
+// Navbar
 import LeftNavbar from './LeftNavbar'
 
 // Modal
@@ -16,7 +13,6 @@ export const Layout = () => {
   return (
     <>
       <ModalProvider>
-        {/* <TopHeader /> */}
         <main className='pt-10 2xl:pl-96 lg:pl-80 2xl:pr-64'>
           <Outlet />
         </main>

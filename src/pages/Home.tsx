@@ -1,4 +1,3 @@
-import Block from '../components/Block'
 import BlockTitle from '../components/BlockTitle'
 import BlogList from '../components/Blog/BlogList'
 import blogs from '../data/blogs'
@@ -30,7 +29,7 @@ export default function Home () {
           </p>
           <Link
             to='/about'
-            className='inline-block px-4 py-2 rounded-xl bg-black/85 hover:bg-black text-white'
+            className='inline-block px-4 py-2 rounded-xl bg-black/80 hover:bg-black text-white'
           >
             About me
           </Link>
@@ -47,7 +46,7 @@ export default function Home () {
           <div className='text-center'>
             <Link
               to='/portfolio'
-              className='inline-block px-4 py-2 rounded-xl bg-black/85 hover:bg-black text-white'
+              className='inline-block px-4 py-2 rounded-xl bg-black/80 hover:bg-black text-white'
             >
               All Projects
             </Link>
@@ -65,7 +64,7 @@ export default function Home () {
           <div className='text-center'>
             <Link
               to='/blog'
-              className='inline-block px-4 py-2 rounded-xl bg-black/85 hover:bg-black text-white'
+              className='inline-block px-4 py-2 rounded-xl bg-black/80 hover:bg-black text-white'
             >
               All Blogs
             </Link>

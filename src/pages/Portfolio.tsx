@@ -9,42 +9,41 @@ export default function Portfolio () {
     <>
       <section className='mb-10'>
         <div className='container mx-auto'>
-            <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
-              <div>
-                <h1 className='text-3xl font-semibold mb-2'>
-                  Where Creativity Meets Code
-                </h1>
-                <p className='max-w-[420px] text-gray-400'>
-                  I blend creativity seamlessly with coding expertise to craft
-                  one-of-a-kind digital experiences that leave a lasting impact.
-                </p>
-              </div>
-              <div>
-                <button
-                  onClick={openModal}
-                  className='flex items-center gap-2 px-4 py-3 font-medium border border-gray-300 rounded-md hover:bg-gray-50 shadow-sm'
-                >
-                  <svg
-                    width='18'
-                    height='16'
-                    viewBox='0 0 18 16'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      d='M1.98994 0.846375C1.20238 0.846375 0.540269 1.36571 0.308713 2.08315C0.241713 2.29093 0.350491 2.50593 0.535047 2.62249L8.79816 7.83882C8.98316 7.9556 9.21894 7.9556 9.40394 7.83882L17.667 2.62249C17.8516 2.50593 17.9604 2.29093 17.8934 2.08315C17.6618 1.36571 16.9997 0.846375 16.2122 0.846375H1.98994ZM1.08238 4.76482C0.704603 4.52626 0.212158 4.79782 0.212158 5.2446V13.4177C0.212158 14.4099 1.00771 15.2136 1.98994 15.2136H16.2122C17.1944 15.2136 17.9899 14.4099 17.9899 13.4177V5.2446C17.9899 4.79782 17.4975 4.52626 17.1197 4.76482L9.57149 9.52949C9.28349 9.71093 8.9186 9.71093 8.6306 9.52949L1.08238 4.76482Z'
-                      fill='#D9D9D9'
-                    />
-                  </svg>
-                  Contact
-                </button>
-              </div>
+          <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
+            <div>
+              <h1 className='text-3xl font-semibold mb-2'>
+                Where Creativity Meets Code
+              </h1>
+              <p className='max-w-[420px] text-gray-400'>
+                I blend creativity seamlessly with coding expertise to craft
+                one-of-a-kind digital experiences that leave a lasting impact.
+              </p>
             </div>
+            {/* <div>
+              <button
+                onClick={openModal}
+                className='inline-flex items-start gap-2 px-5 py-3 rounded-lg bg-black/80 hover:bg-black text-white'
+              >
+                <svg
+                  className='w-5 '
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M2.82495 6.68957L11.5 11.5824L20.1751 6.68957C19.9817 6.12279 19.4353 5.71429 18.7917 5.71429H4.20833C3.56466 5.71429 3.01839 6.12279 2.82495 6.68957ZM20.25 8.62543L11.9366 13.3143C11.6664 13.4666 11.3337 13.4666 11.0634 13.3143L2.75 8.62543V16.8571C2.75 17.6462 3.40291 18.2857 4.20833 18.2857H18.7917C19.5971 18.2857 20.25 17.6462 20.25 16.8571V8.62543ZM1 7.14286C1 5.40711 2.43642 4 4.20833 4H18.7917C20.5636 4 22 5.40711 22 7.14286V16.8571C22 18.5929 20.5636 20 18.7917 20H4.20833C2.43642 20 1 18.5929 1 16.8571V7.14286Z'
+                    fill='currentColor'
+                  ></path>  
+                </svg>
+                Contact
+              </button>
+            </div> */}
+          </div>
         </div>
       </section>
       <section className='pb-10'>
         <div className='container mx-auto'>
-          <Projects  projects={projects} />
+          <Projects projects={projects} />
         </div>
       </section>
     </>

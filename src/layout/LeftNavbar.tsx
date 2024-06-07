@@ -121,7 +121,7 @@ const LeftNavbar = () => {
 
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
         <div className='flex items-center justify-between mb-6'>
-          <span className='flex items-center gap-1 text-sm font-medium text-black/65'>
+          <span className='flex items-center gap-1 text-xs font-medium text-black/65'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 20 20'
@@ -134,7 +134,7 @@ const LeftNavbar = () => {
             </svg>
             Baku, Azerbaijan
           </span>
-          <span className='text-sm font-medium text-black/65'>GMT +4</span>
+          <span className='text-xs font-medium text-black/65'>GMT +4</span>
         </div>
         <div className='mb-6 text-center'>
           <motion.div

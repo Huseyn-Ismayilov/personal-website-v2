@@ -117,7 +117,7 @@ const LeftNavbar = () => {
     <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/15 p-6'>
       <div className='w-64 ml-auto'>
         <div className='mb-5 text-center'>
-          <div className='inline-block relative size-20 group perspective-1000 border border-black/10 rounded-full'>
+          <div className='inline-block relative size-20 group perspective-1000 rounded-full'>
             <motion.div
               className='absolute inset-0 w-full h-full'
               whileHover='hover'
@@ -125,7 +125,7 @@ const LeftNavbar = () => {
               <motion.img
                 src={avatar}
                 alt=''
-                className='absolute inset-0 w-full h-full rounded-full shadow-lg transition-shadow duration-500'
+                className='absolute inset-0 w-full h-full rounded-full shadow-lg transition-shadow duration-500 border border-black/10'
                 initial={{ opacity: 1, rotateY: 0, visibility: 'visible' }}
                 variants={{
                   hover: { opacity: 0, rotateY: 180, visibility: 'hidden' }
@@ -135,7 +135,7 @@ const LeftNavbar = () => {
               <motion.img
                 src={photo}
                 alt='Your '
-                className='absolute inset-0 w-full h-full rounded-full shadow-lg opacity-0 transition-opacity duration-500 backface-hidden'
+                className='absolute inset-0 w-full h-full rounded-full shadow-lg opacity-0 transition-opacity duration-500 border border-black/10 backface-hidden'
                 initial={{ opacity: 0, rotateY: -180, visibility: 'hidden' }}
                 variants={{
                   hover: { opacity: 1, rotateY: 0, visibility: 'visible' }
@@ -148,7 +148,7 @@ const LeftNavbar = () => {
             Huseyn Ismayilov
           </h1>
           <h3 className='text-base font-medium text-black/40'>
-            Front End Developer
+            Front End Developer.
           </h3>
         </div>
         <div className='mb-4'>
@@ -156,12 +156,11 @@ const LeftNavbar = () => {
             <div className='relative group mb-3' key={index}>
               <NavLink key={index} to={item.to} preventScrollReset={true}>
                 {({ isActive }) => {
-                  const color = isActive ? item.color : ''
                   return (
                     <div
-                      className={`flex items-center gap-3 px-4 h-10 rounded-xl  transition-all ${
+                      className={`flex items-center gap-3 px-4 h-10 rounded-xl  border border-black/5 transition-all ${
                         isActive
-                          ? `hover:border-gray-200  bg-black/80 text-white`
+                          ? `hover:border-gray-200 bg-black/80 text-white`
                           : `text-black/60 hover:bg-black/5`
                       }`}
                     >
@@ -176,7 +175,7 @@ const LeftNavbar = () => {
           <div className='relative group'>
             <button
               onClick={openModal}
-              className='flex items-center gap-3 px-4 h-11 border border-black/10 text-black/60  hover:bg-black/5 w-full rounded-xl'
+              className='flex items-center gap-3 px-4 h-11 border border-black/5 text-black/60 hover:bg-black/5 w-full rounded-xl'
             >
               <svg
                 width='18'

@@ -115,13 +115,9 @@ const LeftNavbar = () => {
 
   return (
     <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/5 flex flex-col bg-[#00000002]'>
-      {/* <div className="w-full max-w-64 ml-auto">
-     
-      </div> */}
-
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
         <div className='flex items-center justify-between mb-6'>
-          <span className='flex items-center gap-1 text-xs font-medium text-black/65'>
+          <span className='flex items-center gap-1 text-xs font-medium text-black/45'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 20 20'
@@ -134,7 +130,7 @@ const LeftNavbar = () => {
             </svg>
             Baku, Azerbaijan
           </span>
-          <span className='text-xs font-medium text-black/65'>GMT +4</span>
+          <span className='text-xs font-medium text-black/45'>GMT +4</span>
         </div>
         <div className='mb-6 text-center'>
           <motion.div
@@ -176,7 +172,7 @@ const LeftNavbar = () => {
                 {({ isActive }) => {
                   return (
                     <div
-                      className={`flex items-center gap-3 px-4 h-10 rounded-xl text-md border border-black/5 transition-all ${
+                      className={`flex items-center gap-3 px-4 h-10 rounded-xl text-md border border-gray-200 transition-all ${
                         isActive
                           ? `hover:border-gray-200 bg-black/80 text-white`
                           : `text-black/60 hover:bg-black/5`
@@ -193,7 +189,7 @@ const LeftNavbar = () => {
           <div className='relative group'>
             <button
               onClick={openModal}
-              className='flex items-center gap-3 px-4 h-11 border border-black/5 text-black/60 hover:bg-black/5 w-full rounded-xl'
+              className='flex items-center gap-3 px-4 h-11 border border-gray-200 text-black/60 hover:bg-black/5 w-full rounded-xl'
             >
               <svg
                 className='w-5'
@@ -213,7 +209,7 @@ const LeftNavbar = () => {
       </div>
       <div className='mt-auto'>
         <div className='h-px w-full bg-black/5'></div>
-        <div className='w-full max-w-64 ml-auto pr-6 py-6 mb-4'>
+        <div className='w-full max-w-64 ml-auto pr-6 py-6 mb-2'>
           <SocialMedia />
         </div>
       </div>

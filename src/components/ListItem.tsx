@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 interface ListItemProps {
   image: string
@@ -11,15 +11,15 @@ interface ListItemProps {
 const ListItem: React.FC<ListItemProps> = props => {
   return (
     <div className='flex gap-3 relative attbc0'>
-      <div className='size-8 shrink-0 flex items-center justify-center'>
+      <div className='sm:size-10 size-8 shrink-0 flex items-center justify-center'>
         <img src={props.image} alt='' />
       </div>
       <div className='grow'>
         <div className='flex justify-between gap-2'>
-          <h3 className='text-md font-bold whitespace-pre-wrap'>
+          <h3 className='text-base font-bold whitespace-pre-wrap mb-1 leading-tight'>
             {props.title}
           </h3>
-          <span className='block text-xs text-gray-400 whitespace-nowrap mt-1'>
+          <span className='block text-sm text-gray-400 whitespace-nowrap mt-1'>
             {props.date}
           </span>
         </div>
@@ -27,7 +27,7 @@ const ListItem: React.FC<ListItemProps> = props => {
         {props.accomplishments && (
           <ul className='list-disc ps-4 mt-2'>
             {props.accomplishments.map((item, index) => (
-              <li key={index} className='text-gray-400 text-xs pb-1'>
+              <li key={index} className='text-gray-400 text-sm pb-1'>
                 {item}
               </li>
             ))}

@@ -11,11 +11,11 @@ export default function Home () {
   const latestProjects = projects.slice(0, 2)
   return (
     <>
-      <section className='mb-14'>
+      <section className='md:mb-24 mb-14'>
         <div className='container mx-auto'>
-          <div className='flex items-center text-sm text-green-600 font-medium gap-2 mb-3'>
+          <div className='inline-flex items-center text-sm bg-green-600/10 text-green-600 px-2 py-1 rounded-full font-medium gap-2 mb-3 leading-tight'>
             <div className='size-2 rounded-full bg-green-600'></div>
-            <p>Available for new opportunities</p>
+            <p>Available</p>
           </div>
           <h1 className='text-5xl font-semibold text-black'>
             Hello! I’m Huseyn👏

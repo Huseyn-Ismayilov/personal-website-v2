@@ -56,10 +56,10 @@ export default function Home () {
             <Link
               to='../public/Huseyn-Ismayilov.pdf'
               target='_blank'
-              className='inline-flex items-center gap-3 px-4 h-9 rounded-xl border border-black/80 hover:bg-black/5 text-black/80'
+              className='inline-flex items-center gap-3 px-4 h-9 rounded-xl border border-black/40 hover:bg-black/5 text-black/80'
             >
               <svg
-                width='15'
+                width='14'
                 viewBox='0 0 534 668'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'

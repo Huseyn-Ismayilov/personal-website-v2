@@ -13,8 +13,7 @@ export default function About () {
           <h1 className='text-2xl font-semibold tracking-tight leading-8'>
             <span className='text-black/40'>Hi there </span>👋 <br /> 
             <div className=''>
-            I'm a
-            frontend developer, currently freelancing at{' '}
+            I'm a 20 years old frontend developer, currently freelancing at{' '}
             <a
               className='inline-block transition-all underline hover:text-blue-700'
               href='https://bionluk.com/cyweb'

@@ -38,13 +38,12 @@ export default function Home () {
               design.
             </div>
           </h1> */}
-          <p className='text-base font-medium linear-text tracking-tight leading-relaxed mb-8'>
-            With over 3 years of experience in crafting high-performance,
-            user-friendly web applications, I specialize in delivering elegant
-            solutions with a user-first approach. My expertise lies in creating
-            seamless and intuitive digital experiences that prioritize usability
-            and efficiency, ensuring that each project not only meets but
-            exceeds user expectations.
+          <p className='text-xl font-semibold capitalize linear-text tracking-tight leading-normal mb-8'>
+            With 3+ years of crafting high-performance, user-friendly web apps,
+            I excel in elegant solutions with a user-centric approach. My focus
+            is on creating seamless, intuitive digital experiences that
+            prioritize usability and efficiency, surpassing user expectations in
+            every project.
           </p>
           <div className='flex items-start gap-4'>
             <Link

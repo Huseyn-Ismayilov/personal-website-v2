@@ -21,16 +21,16 @@ const BlogDetailsPage = () => {
         >
           <button
             onClick={goBack}
-            className='flex items-center gap-1 text-lg font-semibold text-blue-800 hover:text-black hover:gap-2  mb-4 transition-all'
+            className='flex items-center gap-2 text-lg font-semibold text-blue-800 hover:text-black hover:gap-3 mb-4 transition-all'
           >
             <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='size-6'
-              viewBox='0 0 24 24'
+              width='6'
+              viewBox='0 0 6 10'
               fill='none'
+              xmlns='http://www.w3.org/2000/svg'
             >
               <path
-                d='M14 16L10 12L14 8'
+                d='M5 9L1 5L5 1'
                 stroke='currentColor'
                 stroke-width='2'
                 stroke-linecap='round'

@@ -79,7 +79,7 @@ export default function Home () {
       <section className='mb-14'>
         <div className='container mx-auto'>
           <div className='mb-5'>
-            <BlockTitle title='Latest Projects' />
+            <BlockTitle title='Selected Projects' />
           </div>
           <div className='mb-10'>
             <Projects projects={latestProjects} />

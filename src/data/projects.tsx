@@ -1,6 +1,9 @@
 import image from '../assets/tachopilot-website.png'
 import image1 from '../assets/albert-mohler-website.png'
 import fiuby from '../assets/fiuby.png'
+import bigbat from '../assets/bigbat.png'
+import garanti from '../assets/garanti-tech.png'
+import fis from '../assets/fis.png'
 
 interface Project {
   name: string
@@ -16,9 +19,21 @@ export const projects: Project[] = [
     link: '#'
   },
   {
+    name: 'Fis',
+    desc: 'Yatch App',
+    image: fis,
+    link: '#'
+  },
+  {
     name: 'Tachopilot App',
     desc: 'Tachopilot App',
     image: image1,
+    link: '#'
+  },
+  {
+    name: 'Garantili',
+    desc: 'Secondhand Phone Trading Platform',
+    image: garanti,
     link: '#'
   },
   {
@@ -28,9 +43,10 @@ export const projects: Project[] = [
     link: '#'
   },
   {
-    name: 'Tachopilot App',
+    name: 'Bigbat',
     desc: 'Tachopilot App',
-    image: image1,
+    image: bigbat,
     link: '#'
-  }
+  },
+
 ]

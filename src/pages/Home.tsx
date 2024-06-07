@@ -16,8 +16,8 @@ export default function Home () {
             <div className='size-2 rounded-full bg-green-600'></div>
             <p>Available</p>
           </div>
-          <h1 className='text-5xl font-semibold text-black'>
-            Hello! I’m Huseyn👏
+          <h1 className='text-5xl font-semibold text-black -mb-1'>
+            Hello I’m Huseyn👏
           </h1>
           <h1 className='text-5xl font-semibold text-black/50 mb-7'>
             Real Things. Experienced Developer.
@@ -27,12 +27,35 @@ export default function Home () {
             web applications. Focused on delivering elegant solutions with a
             user-first approach.
           </p>
-          <Link
-            to='/about'
-            className='inline-block px-4 py-2 rounded-xl bg-black/80 hover:bg-black text-white'
-          >
-            About me
-          </Link>
+          <div className='flex items-start gap-4'>
+            <Link
+              to='/about'
+              className='inline-flex items-center px-4 h-9 rounded-xl bg-black/80 hover:bg-black text-white'
+            >
+              About me
+            </Link>
+            <Link
+              to='../public/Huseyn-Ismayilov.pdf'
+              target='_blank'
+              className='inline-flex items-center gap-3 px-4 h-9 rounded-xl border border-black/80 hover:bg-black/5 text-black/80'
+            >
+              <svg
+                width='15'
+                viewBox='0 0 534 668'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                  <path
+                    d='M200.334 400.667H333.667M300.334 34H140.334C102.997 34 84.3283 34 70.0677 41.2663C57.5233 47.6577 47.3247 57.8563 40.9333 70.4007C33.667 84.6613 33.667 103.33 33.667 140.667V527.333C33.667 564.67 33.667 583.34 40.9333 597.6C47.3247 610.143 57.5233 620.343 70.0677 626.733C84.3283 634 102.997 634 140.334 634H393.667C431.004 634 449.674 634 463.934 626.733C476.477 620.343 486.677 610.143 493.067 597.6C500.334 583.34 500.334 564.67 500.334 527.333V234M300.334 34L500.334 234M300.334 34V180.667C300.334 199.335 300.334 208.669 303.967 215.8C307.164 222.072 312.26 227.171 318.534 230.367C325.664 234 334.997 234 353.667 234H500.334'
+                    stroke='currentColor'
+                    stroke-width='50'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  />
+              </svg>
+              Resume
+            </Link>
+          </div>
         </div>
       </section>
       <section className='mb-14'>
@@ -46,7 +69,7 @@ export default function Home () {
           <div className='text-center'>
             <Link
               to='/portfolio'
-              className='inline-block px-4 py-2 rounded-xl bg-black/80 hover:bg-black text-white'
+              className='inline-flex items-center gap-3 hover:gap-5 px-4 py-2 rounded-xl bg-black/80 hover:bg-black text-white'
             >
               All Projects
             </Link>

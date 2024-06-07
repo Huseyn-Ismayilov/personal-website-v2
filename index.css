@@ -13,6 +13,7 @@
   }
   body {
     font-family: 'Inter', sans-serif;
+    /* user-select: none; */
   }
 }
 .attbc0:not(:last-child) {
@@ -34,6 +35,7 @@ button::placeholder {
 }
 .modal_inner {
   animation: slide-up 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 @keyframes slide-up {
@@ -46,4 +48,12 @@ button::placeholder {
   }
 }
 
-
+.linear-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    285deg,
+    rgb(216 118 29) 1.88487%,
+    hsl(220deg 4% 52%) 100%
+  );
+}

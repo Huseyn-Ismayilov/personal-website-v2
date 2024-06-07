@@ -114,7 +114,7 @@ const LeftNavbar = () => {
   const { openModal } = useModal()
 
   return (
-    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/5 flex flex-col bg-[#00000002]'>
+    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col bg-[#00000002]'>
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
         <div className='flex items-center justify-between mb-6'>
           <span className='flex items-center gap-1 text-xs font-medium text-black/45'>
@@ -208,7 +208,7 @@ const LeftNavbar = () => {
         </div>
       </div>
       <div className='mt-auto'>
-        <div className='h-px w-full bg-black/5'></div>
+        <div className='h-px w-full bg-black/10'></div>
         <div className='w-full max-w-64 ml-auto pr-6 py-6 mb-2'>
           <SocialMedia />
         </div>

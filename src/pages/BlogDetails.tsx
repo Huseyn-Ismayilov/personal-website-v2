@@ -12,7 +12,7 @@ const BlogDetailsPage = () => {
     navigate('/blog')
   }
   return (
-    <div>
+    <section className='pb-10'>
       <div className='container mx-auto'>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -62,7 +62,7 @@ const BlogDetailsPage = () => {
           )}
         </motion.div>
       </div>
-    </div>
+    </section>
   )
 }
 

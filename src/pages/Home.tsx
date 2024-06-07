@@ -12,10 +12,10 @@ export default function Home () {
     <>
       <section className='md:mb-24 mb-14'>
         <div className='container mx-auto'>
-          {/* <div className='inline-flex items-center text-sm bg-green-600/10 text-green-600 px-2 py-1 rounded-full font-medium gap-2 mb-3 leading-tight'>
+          <div className='inline-flex items-center text-sm bg-green-600/10 text-green-600 px-2 py-1 rounded-full font-medium gap-2 mb-3 leading-tight'>
             <div className='size-2 rounded-full bg-green-600'></div>
             <p>Available</p>
-          </div> */}
+          </div>
           <h1 className='text-4xl font-semibold text-black tracking-tight -mb-1'>
             Hello I’m Huseyn👏
           </h1>

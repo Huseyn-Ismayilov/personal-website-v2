@@ -213,7 +213,7 @@ const LeftNavbar: React.FC = () => {
     )
   }
   return (
-    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col bg-[#00000002]'>
+    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col bg-gray-100'>
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
         <div className='flex items-center justify-between mb-6'>
           <span className='flex items-center gap-1 text-xs font-medium text-black/45'>

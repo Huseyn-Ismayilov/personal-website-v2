@@ -8,6 +8,7 @@ export default {
         sans: ['Inter', ' system-ui', 'sans-serif']
       },
       colors: {
+        'gray-100': '#00000002',
         'gray-300': '#EEEEEE',
         'gray-400': '#808080',
         'gray-500': '#3C3C3C',

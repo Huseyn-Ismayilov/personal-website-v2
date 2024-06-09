@@ -1,5 +1,5 @@
 const skills: string[] = [
-  "Html",
+  'Html',
   'Css',
   'Sass/Scss',
   'Javascript',

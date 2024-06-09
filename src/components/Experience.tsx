@@ -1,11 +1,12 @@
 import Cart from './ListItem'
 import { experiences } from '../data/experience'
+import Block from './Block'
 
 // Images
 
 const Experience: React.FC = () => {
   return (
-    <div>
+    <Block>
       {experiences.map((item, index) => (
         <Cart
           key={index}
@@ -16,7 +17,7 @@ const Experience: React.FC = () => {
           accomplishments={item.accomplishments}
         />
       ))}
-    </div>
+    </Block>
   )
 }
 

@@ -12,7 +12,7 @@ interface experinceTypes {
 export const experiences: experinceTypes[] = [
     {
       title: 'Freelance Front End Developer',
-      corporate: 'bionluk',
+      corporate: 'Bionluk',
       date: '12/2021 - Present',
       image: bionluk,
       accomplishments: [

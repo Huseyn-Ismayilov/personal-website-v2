@@ -15,7 +15,7 @@ const ListItem: React.FC<ListItemProps> = props => {
         <img src={props.image} alt='' />
       </div>
       <div className='grow'>
-        <div className='flex smflex-col justify-between gap-1 sm:mb-1 mb-3'>
+        <div className='flex sm:flex-row flex-col justify-between gap-1 sm:mb-1 mb-3'>
           <h3 className='text-lg font-bold whitespace-pre-wrap leading-tight'>
             {props.title}
           </h3>

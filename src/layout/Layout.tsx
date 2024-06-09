@@ -13,7 +13,7 @@ export const Layout = () => {
   return (
     <>
       <ModalProvider>
-        <main className='lg:pt-10 pt-20 lg:mt-0 mt-3 2xl:pl-96 lg:pl-80 2xl:pr-60'>
+        <main className='lg:pt-10 pt-20 lg:mt-0 mt-3 lg:pb-0 pb-20'>
           <Outlet />
         </main>
         <LeftNavbar />

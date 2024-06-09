@@ -169,17 +169,17 @@ const LeftNavbar: React.FC = () => {
           </div>
         </div>
         <div className='fixed bottom-4 left-1/2 -translate-x-[50%]'>
-          <div className='flex items-center gap-4 rounded-xl backdrop-blur-xl bg-white/70 border border-black/5 p-4 '>
+          <div className='flex items-center gap-4 rounded-xl backdrop-blur-xl bg-white/95 border border-black/5 p-3'>
             {LinkItems.map((item, index) => (
               <div className='relative group' key={index}>
                 <NavLink key={index} to={item.to} preventScrollReset={true}>
                   {({ isActive }) => {
                     return (
                       <div
-                        className={`flex items-center justify-center w-12 h-12 rounded-xl text-md border   transition-all ${
+                        className={`flex items-center justify-center w-12 h-12 rounded-xl text-md border transition-all ${
                           isActive
                             ? `bg-black/80 border-transparent text-white`
-                            : `text-black/75 hover:bg-black/5 border-white/35`
+                            : `text-black/75 hover:bg-black/5 border-black/10`
                         }`}
                       >
                         <div className='shrink-0 w-6'>{item.icon}</div>
@@ -192,7 +192,7 @@ const LeftNavbar: React.FC = () => {
             <div className='relative group'>
               <button
                 onClick={openModal}
-                className='flex items-center justify-center w-11 h-11 border border-white/35 text-black/60 hover:bg-black/5 rounded-xl'
+                className='flex items-center justify-center w-11 h-11 border border-black/10 text-black/60 hover:bg-black/5 rounded-xl'
               >
                 <svg
                   className='w-6'

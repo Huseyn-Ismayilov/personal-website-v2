@@ -36,7 +36,7 @@ export default function About () {
           </BlockTransition>
         </div>
       </section>
-      <section className='mb-4'>
+      <section className='mb-12'>
         <div className='container mx-auto'>
           <div className='mb-10'>
             <BlockTitle title='Experience' />

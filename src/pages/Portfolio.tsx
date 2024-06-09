@@ -20,7 +20,7 @@ const Portfolio:React.FC = () => {
           </div>
         </div>
       </section>
-      <section className='pb-10'>
+      <section className='mb-12'>
         <div className='container mx-auto'>
           <Projects projects={projects} />
         </div>

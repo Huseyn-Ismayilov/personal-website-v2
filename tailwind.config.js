@@ -30,7 +30,7 @@ export default {
     container: {
       padding: { DEFAULT: '1rem' },
       screens: {
-        lg: '880px'
+        lg: '950px'
       }
     },
     fontSize: {

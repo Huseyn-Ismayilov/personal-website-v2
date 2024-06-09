@@ -40,7 +40,6 @@ const BlogDetailsPage = () => {
             Back
           </button>
         </motion.div>
-
         <motion.div
           className='max-w-screen-md mx-auto'
           initial={{ x: 20, opacity: 0 }}

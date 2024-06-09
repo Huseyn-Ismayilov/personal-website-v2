@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Projects from '../components/Portfolio/Projects'
 import { projects } from '../data/projects'
 
-export default function Home () {
+const Home:React.FC = () => {
   const latestBlogs = blogs.slice(0, 4)
   const latestProjects = projects.slice(0, 2)
   return (
@@ -16,7 +16,7 @@ export default function Home () {
             <div className='size-2 rounded-full bg-green-600'></div>
             <p>Available</p>
           </div>
-          <h1 className='sm:text-4xl text-2xl font-semibold text-black tracking-tight mb-2'>
+          <h1 className='sm:text-4xl text-3xl font-semibold text-black tracking-tight lg:mb-2 mb-1'>
             Hello I’m Huseyn👏
           </h1>
           {/* <h1 className='sm:text-4xl text-3xl font-semibold text-black/45 tracking-tight mb-4'>
@@ -38,7 +38,7 @@ export default function Home () {
               design.
             </div>
           </h1> */}
-          <p className='sm:text-3xl text-base font-semibold linear-text tracking-tight leading-8 mb-8'>
+          <p className='sm:text-3xl text-2xl font-semibold linear-text tracking-tight leading-8 mb-8'>
             With 3+ years of crafting high-performance, user-friendly web apps,
             I excel in elegant solutions with a user-centric approach. My focus
             is on creating seamless, intuitive digital experiences that
@@ -115,3 +115,4 @@ export default function Home () {
     </>
   )
 }
+export default Home

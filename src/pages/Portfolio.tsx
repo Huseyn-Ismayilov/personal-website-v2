@@ -1,8 +1,7 @@
 import Projects from '../components/Portfolio/Projects'
 import { projects } from '../data/projects'
 
-export default function Portfolio () {
-
+const Portfolio:React.FC = () => {
   return (
     <>
       <section className='mb-10'>
@@ -10,7 +9,8 @@ export default function Portfolio () {
           <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
             <div>
               <h1 className='text-4xl font-semibold'>
-                <span className='text-black/50'>Where Creativity Meets</span> Code
+                <span className='text-black/50'>Where Creativity Meets</span>{' '}
+                Code
               </h1>
               <p className='max-w-[420px] text-gray-400'>
                 I blend creativity seamlessly with coding expertise to craft
@@ -28,3 +28,4 @@ export default function Portfolio () {
     </>
   )
 }
+export default Portfolio

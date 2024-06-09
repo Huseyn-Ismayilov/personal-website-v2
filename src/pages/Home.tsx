@@ -38,7 +38,7 @@ const Home:React.FC = () => {
               design.
             </div>
           </h1> */}
-          <p className='sm:text-3xl text-2xl font-semibold linear-text tracking-tight leading-8 mb-8'>
+          <p className='sm:text-3xl text-2xl font-semibold linear-text tracking-tight sm:leading-8 leading-7 mb-8'>
             With 3+ years of crafting high-performance, user-friendly web apps,
             I excel in elegant solutions with a user-centric approach. My focus
             is on creating seamless, intuitive digital experiences that

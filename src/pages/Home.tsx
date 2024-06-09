@@ -48,14 +48,14 @@ const Home:React.FC = () => {
           <div className='flex items-start gap-4'>
             <Link
               to='/about'
-              className='inline-flex text-md font-medium items-center px-5 h-10 rounded-xl bg-black/80 hover:bg-black text-white'
+              className='inline-flex text-md font-medium items-center px-5 h-9 rounded-xl bg-black/80 hover:bg-black text-white'
             >
               About
             </Link>
             <Link
               to='https://drive.google.com/file/d/14TEUgxbYyL66JKnlXnUGjk8HAMnRLbZV/view'
               target='_blank'
-              className='inline-flex items-center text-md font-medium gap-3 px-5 h-10 rounded-xl border border-black/40 hover:bg-black/5 text-black/80'
+              className='inline-flex items-center text-md font-medium gap-3 px-5 h-9 rounded-xl border border-black/40 hover:bg-black/5 text-black/80'
             >
               <svg
               className='text-black/60'

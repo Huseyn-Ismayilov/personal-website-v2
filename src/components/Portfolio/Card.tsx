@@ -7,7 +7,7 @@ interface cardProps {
 const Card:React.FC<cardProps> = ({ image, title, desc, link }) => {
   return (
     <div className='group'>
-      <div className='rounded-3xl overflow-hidden mb-3 relative bg-white border border-black/5'>
+      <div className='rounded-2xl overflow-hidden mb-3 relative bg-white border border-black/5'>
         <img src={image} className='group-hover:scale-105 transition-all' alt='' />
         <div className='group-hover:opacity-100 opacity-0 absolute inset-0 flex items-center justify-center bg-black/60 transition-all'>
           <a

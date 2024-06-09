@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import avatar from '../assets/avatar.jpeg'
 import photo from '../assets/photo.png'
 import SocialMedia from '../components/SocialMedia/SocialMedia'
+import useWindowWidth from '../hooks/useWindowWidth'
+import { useState } from 'react'
 
 interface itemTypes {
   text: string
@@ -110,9 +112,106 @@ const LinkItems: itemTypes[] = [
   }
 ]
 
-const LeftNavbar = () => {
+const LeftNavbar: React.FC = () => {
   const { openModal } = useModal()
+  const windowWidth = useWindowWidth()
 
+  const [isClicked, setIsClicked] = useState(false)
+
+  const handleTapStart = () => {
+    setIsClicked(!isClicked)
+  }
+
+  if (windowWidth < 1024) {
+    return (
+      <>
+        <div className='fixed left-0 top-0 right-0 z-20 bg-white border-b border-black/5 py-2'>
+          <div className='container mx-auto flex'>
+            <motion.div
+              className='inline-flex items-center gap-4'
+              onTapStart={handleTapStart}
+            >
+              <div className='relative size-14 perspective-1000 rounded-full cursor-pointer'>
+                <motion.img
+                  src={avatar}
+                  alt=''
+                  className='absolute inset-0 w-full h-full rounded-full shadow-lg transition-shadow duration-500 border border-black/10'
+                  initial={{ opacity: 1, rotateY: 0, visibility: 'visible' }}
+                  animate={{
+                    opacity: isClicked ? 0 : 1,
+                    rotateY: isClicked ? 180 : 0,
+                    visibility: isClicked ? 'hidden' : 'visible'
+                  }}
+                  transition={{ duration: 0.8 }}
+                />
+                <motion.img
+                  src={photo}
+                  alt='Your '
+                  className='absolute inset-0 w-full h-full rounded-full shadow-lg opacity-0 transition-opacity duration-500 border border-black/10 backface-hidden'
+                  initial={{ opacity: 0, rotateY: -180, visibility: 'hidden' }}
+                  animate={{
+                    opacity: isClicked ? 1 : 0,
+                    rotateY: isClicked ? 0 : -180,
+                    visibility: isClicked ? 'visible' : 'hidden'
+                  }}
+                  transition={{ duration: 0.8 }}
+                />
+              </div>
+              <div>
+                <h1 className='text-xl font-semibold leading-8 text-black/85 -mb-1'>
+                  Huseyn Ismayilov
+                </h1>
+                <h3 className='text-md font-medium text-black/40'>
+                  Front End Developer.
+                </h3>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+        <div className='fixed bottom-4 left-1/2 -translate-x-[50%]'>
+          <div className='flex items-center gap-4 rounded-xl backdrop-blur-xl bg-white/70 border border-black/5 p-4 '>
+            {LinkItems.map((item, index) => (
+              <div className='relative group' key={index}>
+                <NavLink key={index} to={item.to} preventScrollReset={true}>
+                  {({ isActive }) => {
+                    return (
+                      <div
+                        className={`flex items-center justify-center w-12 h-12 rounded-xl text-md border   transition-all ${
+                          isActive
+                            ? `bg-black/80 border-transparent text-white`
+                            : `text-black/75 hover:bg-black/5 border-white/35`
+                        }`}
+                      >
+                        <div className='shrink-0 w-6'>{item.icon}</div>
+                      </div>
+                    )
+                  }}
+                </NavLink>
+              </div>
+            ))}
+            <div className='relative group'>
+              <button
+                onClick={openModal}
+                className='flex items-center justify-center w-11 h-11 border border-white/35 text-black/60 hover:bg-black/5 rounded-xl'
+              >
+                <svg
+                  className='w-6'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M2.82495 6.68957L11.5 11.5824L20.1751 6.68957C19.9817 6.12279 19.4353 5.71429 18.7917 5.71429H4.20833C3.56466 5.71429 3.01839 6.12279 2.82495 6.68957ZM20.25 8.62543L11.9366 13.3143C11.6664 13.4666 11.3337 13.4666 11.0634 13.3143L2.75 8.62543V16.8571C2.75 17.6462 3.40291 18.2857 4.20833 18.2857H18.7917C19.5971 18.2857 20.25 17.6462 20.25 16.8571V8.62543ZM1 7.14286C1 5.40711 2.43642 4 4.20833 4H18.7917C20.5636 4 22 5.40711 22 7.14286V16.8571C22 18.5929 20.5636 20 18.7917 20H4.20833C2.43642 20 1 18.5929 1 16.8571V7.14286Z'
+                    fill='currentColor'
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  }
   return (
     <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col bg-[#00000002]'>
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
@@ -172,10 +271,10 @@ const LeftNavbar = () => {
                 {({ isActive }) => {
                   return (
                     <div
-                      className={`flex items-center gap-3 px-4 h-10 rounded-xl text-md border border-gray-200 transition-all ${
+                      className={`flex items-center gap-3 px-4 h-10 rounded-xl text-md border transition-all ${
                         isActive
-                          ? `hover:border-gray-200 bg-black/80 text-white`
-                          : `text-black/60 hover:bg-black/5`
+                          ? `bg-black/80 hover:bg-black text-white border-transparent`
+                          : `text-black/60 border-gray-200 hover:bg-black/5`
                       }`}
                     >
                       <div className='shrink-0 w-5 h-auto'>{item.icon}</div>

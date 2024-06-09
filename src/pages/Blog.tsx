@@ -17,7 +17,7 @@ export default function Blog () {
         <div className='container mx-auto'>
           <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
             <div>
-              <h1 className='text-3xl font-semibold mb-2'>All Blogs</h1>
+              <h1 className='text-4xl font-semibold'>All Blogs</h1>
               <p className='max-w-72 text-gray-400'>
                 Ready for an innovative journey filled with insightful writings?
               </p>

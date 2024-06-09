@@ -9,7 +9,7 @@ export default function Portfolio () {
         <div className='container mx-auto'>
           <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
             <div>
-              <h1 className='text-3xl font-semibold mb-2'>
+              <h1 className='text-4xl font-semibold'>
                 <span className='text-black/50'>Where Creativity Meets</span> Code
               </h1>
               <p className='max-w-[420px] text-gray-400'>

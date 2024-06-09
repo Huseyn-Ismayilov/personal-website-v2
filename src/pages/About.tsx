@@ -10,7 +10,7 @@ export default function About () {
     <>
       <section className='mb-10'>
         <div className='container mx-auto'>
-          <h1 className='text-2xl font-semibold tracking-tight leading-8'>
+          <h1 className='text-3xl font-semibold tracking-tight leading-8'>
             <span className='text-black/40'>Hi there </span>👋 <br /> 
             <div className=''>
             I'm a 20 years old frontend developer, currently freelancing at{' '}

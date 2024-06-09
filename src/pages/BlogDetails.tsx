@@ -13,7 +13,7 @@ const BlogDetailsPage = () => {
   }
   return (
     <section className='pb-10'>
-      <div className='container mx-auto'>
+      <div className='container'>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -32,9 +32,9 @@ const BlogDetailsPage = () => {
               <path
                 d='M5 9L1 5L5 1'
                 stroke='currentColor'
-                stroke-width='2'
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeWidth='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
               />
             </svg>
             Back

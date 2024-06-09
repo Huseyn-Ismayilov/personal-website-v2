@@ -13,9 +13,17 @@
   }
   body {
     font-family: 'Inter', sans-serif;
-    user-select: none;
+    /* user-select: none; */
   }
 }
+/* img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+} */
 .attbc0:not(:last-child) {
   padding-bottom: 24px;
   margin-bottom: 24px;
@@ -56,4 +64,9 @@ button::placeholder {
     rgb(142, 110, 7) 1.88487%,
     hsl(220deg 4% 52%) 100%
   );
+}
+
+.container {
+  /* padding-left: 44px; */
+  /* max-width: 1000px; */
 }

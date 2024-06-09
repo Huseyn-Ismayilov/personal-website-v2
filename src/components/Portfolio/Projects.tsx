@@ -1,6 +1,7 @@
 import Card from './Card'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 interface Project {
   image: string
@@ -8,11 +9,18 @@ interface Project {
   desc: string
   link: string
 }
+
 interface ProjectsProps {
   projects: Project[]
 }
+
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 })
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0 })
+
+  useEffect(() => {
+    console.log('In view:', inView)
+  }, [inView])
+
   return (
     <div className='grid md:grid-cols-2 gap-x-5 gap-y-9' ref={ref}>
       {projects.map((item, index) => (
@@ -20,7 +28,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           key={index}
           initial={{ y: -50, opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-          transition={{ duration: 0.35, delay: index * 0.1 }}
+          transition={{ duration: 0.35, delay: index * 0.08 }}
         >
           <Card
             image={item.image}

@@ -9,7 +9,7 @@ export default function About () {
   return (
     <>
       <section className='mb-10'>
-        <div className='container mx-auto'>
+        <div className='container'>
           <h1 className='text-3xl font-semibold tracking-tight leading-8'>
             <span className='text-black/40'>Hi there </span>👋 <br /> 
             <div className=''>
@@ -29,7 +29,7 @@ export default function About () {
         </div>
       </section>
       <section className='mb-12'>
-        <div className='container mx-auto'>
+        <div className='container'>
           <BlockTitle title='Skills' />
           <BlockTransition>
             <SkillList />
@@ -37,7 +37,7 @@ export default function About () {
         </div>
       </section>
       <section className='mb-12'>
-        <div className='container mx-auto'>
+        <div className='container'>
           <div className='mb-10'>
             <BlockTitle title='Experience' />
             <Experience />

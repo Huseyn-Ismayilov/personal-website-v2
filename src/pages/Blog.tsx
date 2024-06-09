@@ -2,7 +2,6 @@ import BlogList from '../components/Blog/BlogList'
 import blogs from '../data/blogs'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import Block from '../components/Block'
 
 export default function Blog () {
   const [visibleBlogs, setVisibleBlogs] = useState(8)
@@ -14,11 +13,11 @@ export default function Blog () {
   return (
     <>
       <section className='mb-10'>
-        <div className='container mx-auto'>
+        <div className='container'>
           <div className='flex flex-wrap gap-4 justify-between items-center bg-white'>
             <div>
               <h1 className='text-4xl font-semibold'>All Blogs</h1>
-              <p className='max-w-72 text-gray-400'>
+              <p className='text-md max-w-72 text-gray-400'>
                 Ready for an innovative journey filled with insightful writings?
               </p>
             </div>
@@ -26,7 +25,7 @@ export default function Blog () {
         </div>
       </section>
       <section className='pb-8'>
-        <div className='container mx-auto'>
+        <div className='container'>
           <BlogList blogs={blogs.slice(0, visibleBlogs)} grid={true} />
           <div className='text-center mt-10'>
             {visibleBlogs < blogs.length && (

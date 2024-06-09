@@ -29,6 +29,7 @@ export default {
     },
     container: {
       padding: { DEFAULT: '1rem' },
+      center: true,
       screens: {
         lg: '950px'
       }

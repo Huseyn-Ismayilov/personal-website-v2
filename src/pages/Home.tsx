@@ -19,25 +19,7 @@ const Home:React.FC = () => {
           <h1 className='sm:text-4xl text-3xl font-semibold text-black tracking-tight lg:mb-2 mb-1'>
             Hello I’m Huseyn👏
           </h1>
-          {/* <h1 className='sm:text-4xl text-3xl font-semibold text-black/45 tracking-tight mb-4'>
-            Real Things. Experienced Developer.
-          </h1> */}
-          {/* <h1 className='text-2xl font-semibold tracking-tight leading-8 mb-6'>
-            <span className='text-black/40'>Hi there </span>👋 <br />
-            <div className=''>
-              I'm a frontend developer, currently freelancing at{' '}
-              <a
-                className='inline-block transition-all underline hover:text-blue-700'
-                href='https://bionluk.com/cyweb'
-                target='_blank'
-              >
-                Bionluk
-              </a>
-              . I have a fervent passion for meticulously crafting beautiful
-              micro-interactions and refining the smallest details in interface
-              design.
-            </div>
-          </h1> */}
+
           <p className='sm:text-3xl text-2xl font-semibold linear-text tracking-tight sm:leading-8 leading-7 mb-8'>
             With 3+ years of crafting high-performance, user-friendly web apps,
             I excel in elegant solutions with a user-centric approach. My focus

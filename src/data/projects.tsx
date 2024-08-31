@@ -4,9 +4,10 @@ import fiuby from '../assets/fiuby.png'
 import bigbat from '../assets/bigbat.png'
 import garanti from '../assets/garanti-tech.png'
 import fis from '../assets/fis.png'
-
 import printbi from '../assets/printibi.png'
 import yacht from '../assets/yacht.png'
+import flipped from '../assets/flipped.png'
+import oceanX from '../assets/oceanX.png'
 
 interface Project {
   name: string
@@ -64,4 +65,17 @@ export const projects: Project[] = [
     image: printbi,
     link: '#'
   },
+    {
+    name: 'oceanX',
+    desc: '',
+    image: oceanX,
+    link: '#'
+  },
+  {
+    name: 'FlippedNodeMonkes',
+    desc: '',
+    image: flipped,
+    link: '#'
+  },
+
 ]

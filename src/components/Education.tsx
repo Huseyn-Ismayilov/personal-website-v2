@@ -15,12 +15,12 @@ export default function Education() {
                 corporate="Duzce University"
                 image={schoolImage}
             />
-            <Cart
+            {/* <Cart
                 title="Front-End Development Bootcamp"
                 date="July 2021"
                 corporate="JED Academy"
                 image={jedAcademy}
-            />
+            /> */}
         </Block>
     )
 }

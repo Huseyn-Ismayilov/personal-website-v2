@@ -169,7 +169,7 @@ const LeftNavbar: React.FC = () => {
           </div>
         </div>
         <div className='fixed bottom-4 left-1/2 -translate-x-[50%]'>
-          <div className='flex items-center gap-4 rounded-xl backdrop-blur-sm bg-white/85 border border-gray-500/10 p-3'>
+          <div className='flex items-center gap-4 rounded-xl backdrop-blur-sm bg-white/90 border border-gray-500/10 p-3'>
             {LinkItems.map((item, index) => (
               <div className='relative group' key={index}>
                 <NavLink key={index} to={item.to} preventScrollReset={true}>

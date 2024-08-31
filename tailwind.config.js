@@ -45,8 +45,8 @@ export default {
       '2xl': '1.363rem',
       '3xl': '1.563rem',
       '4xl': '1.8rem',
-      '5xl': '40px',
-      '6xl': '44px',
+      '5xl': '2rem',
+      '6xl': '36px',
     }
   },
   plugins: [

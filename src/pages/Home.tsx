@@ -4,7 +4,8 @@ import blogs from '../data/blogs'
 import { Link } from 'react-router-dom'
 import Projects from '../components/Portfolio/Projects'
 import { projects } from '../data/projects'
-import { log } from 'console'
+import callMe from '../assets/Call-Me.mp4'
+import clapping from '../assets/Clapping.mp4'
 
 const Home: React.FC = () => {
   // Date
@@ -13,13 +14,6 @@ const Home: React.FC = () => {
   const diffDate: number = today.getTime() - startDate.getTime()
   const date: number = Math.floor(diffDate / 31557600000)
 
-  console.log(date)
-
-  console.log(today);
-  
-  // Blog
-  // const latestBlogs = blogs.slice(0, 4)
-  // const latestProjects = projects.slice(0, 2)
   return (
     <>
       <section className='md:mb-24 mb-14'>
@@ -28,14 +22,41 @@ const Home: React.FC = () => {
             <div className='size-2 rounded-full bg-green-600'></div>
             <p>Available</p>
           </div>
-          <h1 className='sm:text-4xl text-3xl font-semibold text-black tracking-tight lg:mb-2 mb-1'>
+          {/* <h1 className='sm:text-5xl text-3xl font-semibold text-black tracking-tight lg:mb-2 mb-1'>
             Hello I’m Huseyn👏
+          </h1> */}
+          {/* <h1 className='sm:text-5xl text-3xl font-semibold text-black tracking-tight lg:mb-2 mb-1'>
+           <span className='relative z-10'> Hello I’m Huseyn{' '}</span>
+            <div className='inline-flex items-end justify-start size-7 translate-y-3'>
+              <video
+                width={60}
+                className='min-w-16 min-h-16 max-w-fit'
+                autoPlay
+                loop
+                muted
+              >
+                <source src={callMe} />
+              </video>
+            </div>
+          </h1> */}
+          <h1 className='sm:text-5xl text-3xl font-semibold text-black tracking-tight lg:mb-2 mb-1'>
+           <span className='relative z-10'> Hello I’m Huseyn</span>
+            <div className='inline-flex items-end justify-start size-7 translate-y-4'>
+              <video
+                width={60}
+                className='min-w-[70px] min-h-[70px] max-w-fit'
+                autoPlay
+                loop
+                muted
+              >
+                <source src={callMe} />
+              </video>
+            </div>
           </h1>
-
-          <p className='sm:text-3xl text-2xl font-semibold linear-text tracking-tight sm:leading-8 leading-7 mb-8'>
-            With 3+ years of crafting high-performance, user-friendly web apps,
-            I excel in elegant solutions with a user-centric approach. My focus
-            is on creating seamless, intuitive digital experiences that
+          <p className='sm:text-3xl text-2xl font-semibold bg-gradient-to-tl from-[#333333] to-[#808389] text-transparent bg-clip-text tracking-tight sm:leading-8 leading-7 mb-8'>
+            With {date}+ years of crafting high-performance, user-friendly web
+            apps, I excel in elegant solutions with a user-centric approach. My
+            focus is on creating seamless, intuitive digital experiences that
             prioritize usability and efficiency, surpassing user expectations in
             every project.
           </p>

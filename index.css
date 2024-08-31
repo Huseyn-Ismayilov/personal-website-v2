@@ -56,13 +56,13 @@ button::placeholder {
   }
 }
 
-.linear-text {
+/* .linear-text {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(
     285deg,
-    rgb(142, 110, 7) 1.88487%,
-    hsl(220deg 4% 52%) 100%
+    #8e6e07 1.88487%,
+    #808389 100%
   );
 }
-
+ */

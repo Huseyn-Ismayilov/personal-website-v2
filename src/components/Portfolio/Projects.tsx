@@ -17,9 +17,6 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0 })
 
-  useEffect(() => {
-    console.log('In view:', inView)
-  }, [inView])
 
   return (
     <div className='grid md:grid-cols-2 gap-x-5 gap-y-9' ref={ref}>

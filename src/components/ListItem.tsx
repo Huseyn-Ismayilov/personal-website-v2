@@ -10,7 +10,7 @@ interface ListItemProps {
 
 const ListItem: React.FC<ListItemProps> = props => {
   return (
-    <div className='flex md:gap-5 gap-4 relative attbc0 overflow-hidden'>
+    <div className='flex md:gap-5 gap-3 relative attbc0 overflow-hidden'>
       <div className='sm:size-10 size-8 shrink-0 flex items-center justify-center'>
         <img src={props.image} alt='' />
       </div>
@@ -23,7 +23,7 @@ const ListItem: React.FC<ListItemProps> = props => {
             {props.date}
           </span>
         </div>
-        <h5 className='text-base  text-black/50 font-medium'>{props.corporate}</h5>
+        <h5 className='lg:text-base text-md text-black/50 font-medium'>{props.corporate}</h5>
         {props.accomplishments && (
           <ul className='list-disc ps-4 mt-2'>
             {props.accomplishments.map((item, index) => (

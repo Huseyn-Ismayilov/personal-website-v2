@@ -4,10 +4,22 @@ import blogs from '../data/blogs'
 import { Link } from 'react-router-dom'
 import Projects from '../components/Portfolio/Projects'
 import { projects } from '../data/projects'
+import { log } from 'console'
 
-const Home:React.FC = () => {
-  const latestBlogs = blogs.slice(0, 4)
-  const latestProjects = projects.slice(0, 2)
+const Home: React.FC = () => {
+  // Date
+  const today: Date = new Date('Sat Aug 31 2024')
+  const startDate: Date = new Date('May 26, 2021')
+  const diffDate: number = today.getTime() - startDate.getTime()
+  const date: number = Math.floor(diffDate / 31557600000)
+
+  console.log(date)
+
+  console.log(today);
+  
+  // Blog
+  // const latestBlogs = blogs.slice(0, 4)
+  // const latestProjects = projects.slice(0, 2)
   return (
     <>
       <section className='md:mb-24 mb-14'>
@@ -40,7 +52,7 @@ const Home:React.FC = () => {
               className='inline-flex items-center text-md font-medium gap-3 px-5 h-9 rounded-xl border border-black/40 hover:bg-black/5 text-black/80'
             >
               <svg
-              className='text-black/60'
+                className='text-black/60'
                 width='14'
                 viewBox='0 0 534 668'
                 fill='none'
@@ -65,7 +77,7 @@ const Home:React.FC = () => {
             <BlockTitle title='Selected Projects' />
           </div>
           <div className='mb-10'>
-            <Projects projects={latestProjects} />
+            <Projects projects={projects.slice(0, 2)} />
           </div>
           <div className='text-center'>
             <Link
@@ -83,7 +95,7 @@ const Home:React.FC = () => {
             <BlockTitle title='Latest Blogs' />
           </div>
           <div className='mb-8'>
-            <BlogList blogs={latestBlogs} grid={true} />
+            <BlogList blogs={blogs.slice(0, 4)} grid={true} />
           </div>
           <div className='text-center'>
             <Link

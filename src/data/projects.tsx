@@ -5,6 +5,9 @@ import bigbat from '../assets/bigbat.png'
 import garanti from '../assets/garanti-tech.png'
 import fis from '../assets/fis.png'
 
+import printbi from '../assets/printibi.png'
+import yacht from '../assets/yacht.png'
+
 interface Project {
   name: string
   desc: string
@@ -44,9 +47,21 @@ export const projects: Project[] = [
   },
   {
     name: 'Bigbat',
-    desc: 'Tachopilot App',
+    desc: 'Personal website',
     image: bigbat,
     link: '#'
   },
 
+  {
+    name: 'Yachtim',
+    desc: 'Rent your yacht and sail the seas',
+    image: yacht,
+    link: '#'
+  },
+  {
+    name: 'printbi',
+    desc: 'Design your own product',
+    image: printbi,
+    link: '#'
+  },
 ]

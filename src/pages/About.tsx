@@ -6,24 +6,29 @@ import Education from '../components/Education'
 import BlockTransition from '../components/Animated'
 
 export default function About () {
+  const date: Date = new Date()
+  const birthDay: Date = new Date('July 26, 2003 12:00:00')
+  const diffDate: number = date.getTime() - birthDay.getTime()
+  const age: number = Math.floor(diffDate / 31557600000)
+
   return (
     <>
       <section className='mb-10'>
         <div className='container'>
           <h1 className='text-3xl font-semibold tracking-tight leading-8'>
-            <span className='text-black/40'>Hi there </span>👋 <br /> 
+            <span className='text-black/40'>Hi there </span>👋 <br />
             <div className=''>
-            I'm a 20 years old frontend developer, currently freelancing at{' '}
-            <a
-              className='inline-block transition-all underline hover:text-blue-700'
-              href='https://bionluk.com/cyweb'
-              target='_blank'
-            >
-              Bionluk
-            </a>
-            . I have a fervent passion for meticulously crafting beautiful
-            micro-interactions and refining the smallest details in interface
-            design.
+              I'm a {age} years old frontend developer, currently freelancing at{' '}
+              <a
+                className='inline-block transition-all underline hover:text-blue-700'
+                href='https://bionluk.com/cyweb'
+                target='_blank'
+              >
+                Bionluk
+              </a>
+              . I have a fervent passion for meticulously crafting beautiful
+              micro-interactions and refining the smallest details in interface
+              design.
             </div>
           </h1>
         </div>

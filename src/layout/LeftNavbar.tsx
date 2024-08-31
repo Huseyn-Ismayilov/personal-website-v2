@@ -192,7 +192,7 @@ const LeftNavbar: React.FC = () => {
             <div className='relative group'>
               <button
                 onClick={openModal}
-                className='flex items-center justify-center w-11 h-11 border border-black/10 text-black/60 hover:bg-black/5 rounded-xl'
+                className='flex items-center justify-center w-12 h-12 border border-black/10 text-black/60 hover:bg-black/5 rounded-xl'
               >
                 <svg
                   className='w-6'
@@ -213,7 +213,7 @@ const LeftNavbar: React.FC = () => {
     )
   }
   return (
-    <div className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col bg-gray-100'>
+    <aside className='fixed left-0 top-0 h-dvh 2xl:w-96 w-80 border-r border-black/10 flex flex-col bg-gray-100'>
       <div className='w-full max-w-64 ml-auto pr-6 pt-6'>
         <div className='flex items-center justify-between mb-6'>
           <span className='flex items-center gap-1 text-xs font-medium text-black/45'>
@@ -312,7 +312,7 @@ const LeftNavbar: React.FC = () => {
           <SocialMedia />
         </div>
       </div>
-    </div>
+    </aside>
   )
 }
 
